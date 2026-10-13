@@ -1,43 +1,109 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+    <title>My Student Portfolio</title>
 </head>
 <body>
 
-<header>
-    <h1>My Portfolio</h1>
-    <nav>
+    <!-- Header -->
+    <header id="home">
+        <h1>Brian Lee Wagsayan</h1>
+        <p>BS Information Technology Student</p>
+        <p>Welcome to my student portfolio!</p>
+
+        <!-- Navigation -->
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2>About Me</h2>
+        <img src="images/profile.jpg" alt="Profile Photo" width="200">
+
+        <p>
+            My name is Brian Lee Wagsayan. I am a Bachelor of Science
+            in Information Technology student majoring in Network and
+            Security at the University of the Cordilleras. I enjoy
+            learning about programming, computers, and networking.
+        </p>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <h2>My Skills</h2>
         <ul>
-            <li><a href="">Home</a></li>
-            <li><a href="">About</a></li>
-            <li><a href="">Skills</a></li>
-            <li><a href="">Projects</a></li>
-            <li><a href="">Contact</a></li>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>Java Programming</li>
+            <li>Computer Networking</li>
+            <li>MySQL</li>
         </ul>
-    </nav>
-    <ul>
-        <li>Home</li>
-        <li>About</li>
-        <li>Skills<li>
-        <li>Project</li>
-        <li>Contacts</li>
-    </ul>
-</header>
-<div class = "Skills">
-    <h3>Skills</h3>
-<ul>
-    <li>HTML</li>
-    <li>RUBY</li>
-    <li>JAVASCRIPT</li>
-    <li>C#</li>
-    <li>CSS</li>
-</ul>
+    </section>
 
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2>My Projects</h2>
 
-<div >
+        <div>
+            <h3>Student Portfolio Website</h3>
+            <p>A personal website created using HTML.</p>
+            <a href="#home">View Project</a>
+        </div>
+
+        <div>
+            <h3>Student Record System</h3>
+            <p>A program for organizing student information.</p>
+            <a href="#projects">View Project</a>
+        </div>
+
+        <div>
+            <h3>Network Configuration Lab</h3>
+            <p>A networking activity using Cisco Packet Tracer.</p>
+            <a href="#projects">View Project</a>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Me</h2>
+
+        <form action="#" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <br><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <br><br>
+
+            <label for="subject">Subject:</label>
+            <input type="text" id="subject" name="subject" required>
+            <br><br>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+            <br><br>
+
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>2026 - Brian Lee Wagsayan</p>
+    </footer>
 
 </body>
 </html>
